@@ -1,29 +1,45 @@
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* Primary and Neutral Colors */
+:root {
+    --primary-yellow: #FFCC00;
+    --beacon-yellow: #FFFF00;
+    --gray: #BEBEB9;
+    --light-gray: #EBEBEB;
+    --black: #1E1E1E;
+    --white: #FFFFFF;
 }
 
-#loadMore {
-    animation: fadeIn 2s ease-in-out;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+body {
+    font-family: 'Gill Sans', 'Lucida Sans', sans-serif;
+    color: var(--black);
+    background-color: var(--light-gray);
 }
 
-#loadMore:hover {
-    background-color: #0056b3;
+h1 {
+    font-size: 70pt;
+    color: var(--black);
 }
 
-#additionalContent {
-    display: none;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    animation: fadeIn 2s ease-in-out;
+h2 {
+    font-size: 38pt;
+    color: var(--beacon-yellow); 
+}
+
+p {
+    font-size: 18pt;
+    color: var(--black);
+}
+
+.background-black {
+    background-color: var(--black);
+    color: var(--white); 
+}
+
+.primary-background {
+    background-color: var(--primary-yellow);
+    color: var(--white);
+}
+
+.neutral-background {
+    background-color: var(--gray);
+    color: var(--black);
 }
